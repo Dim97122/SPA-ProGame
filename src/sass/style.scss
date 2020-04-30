@@ -1,3 +1,131 @@
-@import '~bootstrap/scss/functions';
-@import './bootstrap-variables';
+
+
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+
 @import '~bootstrap/scss/bootstrap';
+
+$grey-bcg: #191919;
+$red: #d20a32;
+
+body, html {
+  height: 100%;
+  background-color: $grey-bcg !important;
+  color: white;
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.logo {
+  color: $red;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.white-title-emphasis {
+  color: white;
+  font-weight: bold;
+
+  .big {
+    font-size: 3em;
+  }
+
+  .medium {
+    font-size: 2em;
+  }
+
+  .small {
+    font-size: 1em;
+  }
+}
+
+.red-emphasis {
+  color: $red;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+
+.presentation {
+  margin-bottom: 2em;
+
+  .title {
+    font-size: 3em;
+    font-weight: bold;
+  }
+}
+
+.cardGame {
+  background-color: $grey-bcg;
+
+  .card-body {
+    .gameTitle {
+      font-size: 2em;
+      font-weight: bold;
+    }
+  }
+}
+
+.card:hover {
+	transform: translateY(20px);
+}
+.container {
+	position: relative;
+	width: 50%;
+}
+​
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+​
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 75%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: black;
+}
+​
+.container:hover .overlay {
+	opacity: 1;
+}
+​
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+
+.hero-container {
+  min-height: 50vh;
+
+  .website_button {
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    background-color: $red;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+  }
+}

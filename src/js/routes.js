@@ -1,9 +1,9 @@
-// import { Home } from "./Home";
-// import { PageList } from "./PageList";
-// import { PageDetails } from "./PageDetails";
+import { Home } from "./Home";
+import { GameList } from "./GameList";
+import { GameDetails } from "./GameDetails";
 
-const routes = {
+export const routes = {
 	"": Home,
-	pagelist: PageList,
-	pagedetails: PageDetails,
+	gamelist: GameList,
+	gamedetails: GameDetails,
 };

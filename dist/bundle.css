@@ -6469,22 +6469,6 @@ button.bg-dark:focus {
   padding-top: 100%;
 }
 
-.embed-responsive-21by9::before {
-  padding-top: 42.8571428571%;
-}
-
-.embed-responsive-16by9::before {
-  padding-top: 56.25%;
-}
-
-.embed-responsive-4by3::before {
-  padding-top: 75%;
-}
-
-.embed-responsive-1by1::before {
-  padding-top: 100%;
-}
-
 .flex-row {
   flex-direction: row !important;
 }
@@ -9890,4 +9874,116 @@ h3 {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+body, html {
+  height: 100%;
+  background-color: #191919 !important;
+  color: white;
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  color: #d20a32;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.white-title-emphasis {
+  color: white;
+  font-weight: bold;
+}
+.white-title-emphasis .big {
+  font-size: 3em;
+}
+.white-title-emphasis .medium {
+  font-size: 2em;
+}
+.white-title-emphasis .small {
+  font-size: 1em;
+}
+
+.red-emphasis {
+  color: #d20a32;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.presentation {
+  margin-bottom: 2em;
+}
+.presentation .title {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.cardGame {
+  background-color: #191919;
+}
+.cardGame .card-body .gameTitle {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: translateY(20px);
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+​ .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+​ .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 75%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: black;
+}
+
+​ .container:hover .overlay {
+  opacity: 1;
+}
+
+​ .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-container {
+  min-height: 50vh;
+}
+.hero-container .website_button {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  background-color: #d20a32;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
 }

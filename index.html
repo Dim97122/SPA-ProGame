@@ -2,21 +2,25 @@
 <html>
   <head>
     <title>ProGame</title>
-    <link rel="stylesheet" href="dist/bundle.css" />
+    <link rel="stylesheet" href="dist/bundle.css"/>
   </head>
 
   <body>
-    <a href="#">Home</a>
-    <a href="#pagelist">PageList</a>
-    <a href="#pagelist/borderlands">PageList borderlands</a>
+    <div class="container-fluid">
 
-    <section id="pageContent">Choissez un lien</section>
+      <nav class="navbar ml-0">
+        <a class="logo" href="#">The Hyper ProGame</a>
+        <a href="#gamelist">GameList</a>
+        <a href="#gamelist/borderlands">GameList borderlands</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Find a game..." aria-label="Search">
+        </form>
+      </nav>
 
-    <!-- <script src="dist/bundle.js"></script> -->
-    <script src="src/js/Home.js"></script>
-    <script src="src/js/PageList.js"></script>
-    <script src="src/js/PageDetails.js"></script>
-    <script src="src/js/routes.js"></script>
-    <script src="src/js/index.js"></script>
+      <div class="presentation">
+      </div>
+      <section id="pageContent">Choissez un lien</section>
+    </div>
+    <script src="dist/bundle.js"></script>
   </body>
 </html>
